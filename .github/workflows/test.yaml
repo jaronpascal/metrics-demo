@@ -32,4 +32,10 @@ jobs:
           # or use Snyk or other security scanning tool
 
       - name: Run Tests
-        run: npm test
+        run: npm test -- --coverage
+
+      - name: Upload Coverage Reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-reports
+          path: coverage
