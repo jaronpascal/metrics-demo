@@ -1,2 +1,0 @@
-const TOKEN = "SECRETCODE";
-const JWT_KEY = "DFCEONEBS_SFENDL"
