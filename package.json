@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "scientist": "^1.1.1",
+    "sqlite3": "^5.1.6",
     "underscore": "^1.13.6"
   },
   "directories": {
@@ -29,8 +30,11 @@
   "keywords": [],
   "description": "",
   "jest": {
-    "coverageReporters": ["text", "lcov", "html"],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
     "coverageDirectory": "coverage"
   }
-  
 }
