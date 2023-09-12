@@ -2,104 +2,121 @@
 layout: default
 ---
 
-{{ site.github.project_tagline }}
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-This is a demonstration of some of the cool integrations with GitHub that
-GitHub Pages provides.
+[Link to another page](./another-page.html).
 
-For example, that heading comes from the GitHub repository this demo is
-hosted within.
+There should be whitespace between paragraphs.
 
-```
-{% raw %}
-<h1>{{ site.github.project_tagline }}</h1>
-{% endraw %}
-```
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-The repository this demo is hosted in is [{{ site.github.repository_url}}]({{ site.github.repository_url}})
+# Header 1
 
-## Contributors
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-These lovely people have contributed a change to this repository. If you want to see yourself in this list, send me a pull request. Go to the bottom for a real simple way to help.
+## Header 2
 
-<ul>
-{% for contributor in site.github.contributors %}
-  <li>
-    <img src="{{ contributor.avatar_url }}" width="32" height="32" />
-    <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
-  </li>
-{% endfor %}
-</ul>
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-The code for generating that list is:
+### Header 3
 
-```
-{% raw %}
-<ul>
-{% for contributor in site.github.contributors %}
-  <li>
-    <img src="{{ contributor.avatar_url }}" width="32" height="32" />
-    <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
-  </li>
-{% endfor %}
-</ul>
-{% endraw %}
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
 ```
 
-## Repositories
-
-This is a list of my public repositories
-
-<ul>
-  {% for repository in site.github.public_repositories %}
-    <li><a href="{{ repository.html_url }}">{{ repository.full_name }}</a></li>
-  {% endfor %}
-</ul>
-
-```
-{% raw %}
-<ul>
-  {% for repository in site.github.public_repositories %}
-    <li><a href="{{ repository.html_url }}">{{ repository.full_name }}</a></li>
-  {% endfor %}
-</li>
-{% endraw %}
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
 ```
 
-## Members
+#### Header 4
 
-This is a list of the members of my "organization". This is probably just me.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
 
-<ul>
-{% for member in site.github.organization_members %}
-  <li>
-    <img src="{{ member.avatar_url }}" width="32" height="32" /> {{ member.login }}
-  </li>
-{% endfor %}
-</ul>
+##### Header 5
+
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this
+
+* * *
+
+### Here is an unordered list
+
+* Item foo
+* Item bar
+* Item baz
+* Item zip
+
+### And an ordered list
+
+1. Item one
+1. Item two
+1. Item three
+1. Item four
+
+### And a nested list
+
+* level 1 item
+  * level 2 item
+  * level 2 item
+    * level 3 item
+    * level 3 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+### Definition lists can be used with HTML syntax
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
 
 ```
-{% raw %}
-<ul>
-{% for member in site.github.organization_members %}
-  <li>
-    <img src="{{ member.avatar_url }}" width="32" height="32" /> {{ member.login }}
-  </li>
-{% endfor %}
-</ul>
-{% endraw %}
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-## Theme
-
-GitHub Pages now support specifying themes outside of your repository. For example, you can use one of GitHub's pre-built themes by entering the following in [`_config.yml`](https://github.com/Haacked/gh-pages-demo/blob/gh-pages/_config.yml)
-
 ```
-theme: minima
+The final element.
 ```
-
-GitHub Pages also supports specifying another repository as the theme for your site. See the [documentation for more information](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/).
-
-### Bug in this page?
-
-To fix a bug in this page [click this edit link]({{ site.github.repository_url}}/edit/gh-pages/index.markdown).
