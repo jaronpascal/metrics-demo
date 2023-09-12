@@ -1,10 +1,10 @@
 "use strict";
 
-const _ = require('underscore');
-const science = require('scientist/console');
+const _ = require("underscore");
+const science = require("scientist/console");
 
 const sumList = (arr) => {
-  return science('sum-list', (experiment) => {
+  return science("sum-list", (experiment) => {
     experiment.use(() => sumListOld(arr));
     experiment.try(() => sumListNew(arr));
   });
@@ -22,10 +22,10 @@ const sumListNew = (arr) => {
   return _.reduce(arr, (sum, i) => sum + i);
 };
 
-console.log("....... sumList([1, 2, 3]) ......")
+console.log("....... sumList([1, 2, 3]) ......");
 
 console.log(sumList([1, 2, 3]));
 
-console.log("....... sumList([]) ......")
+console.log("....... sumList([]) ......");
 
 console.log(sumList([]));
