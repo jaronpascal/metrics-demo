@@ -18,7 +18,8 @@ db.serialize(() => {
 
 // Retrieve data
 db.serialize((fieldValue) => {
-  db.each("SELECT id, name FROM users WHERE Field = '" & fieldValue & "';", (err, row) => {
+  const value =  10 / fieldValue;
+  db.each("SELECT id, name FROM users WHERE Page = '" & value & "';", (err, row) => {
     if (err) {
       console.error(err.message);
     }
